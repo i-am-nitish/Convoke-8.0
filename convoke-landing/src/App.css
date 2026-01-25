@@ -20,11 +20,19 @@
   z-index: 1;
 }
 
-/* Mobile - show full video without cropping */
+/* Default: desktop */
+.background-video-mobile{
+  display: none;
+}
+
+/* Mobile view */
 @media (max-width: 768px) {
   .background-video {
-    object-fit: contain;
-    background-color: #000;
+    display: none;
+  }
+
+  .background-video-mobile {
+    display: block;
   }
 }
 

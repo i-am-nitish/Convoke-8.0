@@ -13,7 +13,17 @@ function App() {
       >
         <source src="/convokelanding1.mp4" type="video/mp4" />
       </video>
-      
+      {/* Mobile video */}
+  <video
+    className="background-video-mobile background-video"
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="metadata"
+  >
+    <source src="/convokelandingmobile.mov" type="video/mp4" />
+  </video>
     
     </div>
   )
