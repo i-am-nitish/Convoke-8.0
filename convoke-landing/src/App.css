@@ -20,6 +20,14 @@
   z-index: 1;
 }
 
+/* Mobile - show full video without cropping */
+@media (max-width: 768px) {
+  .background-video {
+    object-fit: contain;
+    background-color: #000;
+  }
+}
+
 
 
 .content h1 {
