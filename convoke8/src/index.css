@@ -1,12 +1,37 @@
-body {
+/* Global Reset & Base Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  background: #000;
+}
+
+body {
+  font-family: 'VT323', 'Share Tech Mono', monospace;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  /* Disable text selection for immersive feel */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
+}
+
+/* Prevent iOS zoom on tap */
+input,
+button,
+select,
+textarea {
+  font-size: 16px;
 }
