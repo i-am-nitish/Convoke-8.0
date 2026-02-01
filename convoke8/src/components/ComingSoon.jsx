@@ -245,8 +245,6 @@ function ComingSoon() {
           </div>
         )}
       </div>
-
-      <div className="vignette"></div>
     </div>
   );
 }
