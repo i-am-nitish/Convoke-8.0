@@ -9,7 +9,7 @@ const terminalSequence = [
   { type: 'output', text: '> CHECKING SYSTEM INTEGRITY ...', delay: 400 },
   { type: 'blank', text: '', delay: 300 },
   { type: 'warning', text: '> WARNING: CLASSIFIED DATA DETECTED.', delay: 400 },
-  { type: 'output', text: '> DECRYPTION SCHEDULED FOR: MARCH 2026', delay: 300 },
+  { type: 'output', text: '> DECRYPTION SCHEDULED FOR: APRIL 2026', delay: 300 },
   { type: 'output', text: '> LOCATION: CLUSTER_INNOVATION_CENTRE', delay: 300 },
   { type: 'blank', text: '', delay: 200 },
   { type: 'command', text: 'ROOT@CONVOKE :~ /V8.0# ', delay: 400, cursor: true },
@@ -229,7 +229,7 @@ function ComingSoon() {
           preload="auto"
           onEnded={handleVideoEnd}
         >
-          <source src="/convokelanding2.mp4" type="video/mp4" />
+          <source src="/3_new.mp4" type="video/mp4" />
         </video>
 
         {showSocials && (
