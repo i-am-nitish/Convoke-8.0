@@ -1,0 +1,78 @@
+/* ====================================
+   Team Section
+   ==================================== */
+
+.team {
+    background: var(--bg-primary);
+}
+
+.team__group {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team__group-title {
+    font-family: var(--font-pixel);
+    font-size: 1.3rem;
+    color: var(--cyan);
+    text-shadow: 0 0 8px var(--cyan-glow);
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.team__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.team__card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 220px;
+    padding: 14px 18px !important;
+}
+
+.team__avatar {
+    width: 44px;
+    height: 44px;
+    background: var(--bg-card);
+    border: 2px solid var(--amber-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-retro);
+    font-size: 0.6rem;
+    color: var(--amber);
+    flex-shrink: 0;
+}
+
+.team__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2px;
+}
+
+.team__name {
+    font-family: var(--font-pixel);
+    font-size: 1.1rem;
+    color: var(--amber);
+}
+
+.team__role {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--amber-dim);
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+    .team__card {
+        min-width: 100%;
+    }
+}

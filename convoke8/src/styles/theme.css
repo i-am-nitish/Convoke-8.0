@@ -1,0 +1,295 @@
+/* ====================================
+   CONVOKE 8.0 — Design System
+   Retro 8-bit CRT Terminal Theme
+   ==================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Press+Start+2P&display=swap');
+
+:root {
+    /* Primary amber palette */
+    --amber: #ff9500;
+    --amber-dim: #b36800;
+    --amber-bright: #ffb84d;
+    --amber-glow: rgba(255, 149, 0, 0.4);
+
+    /* Accent colors */
+    --cyan: #00e5ff;
+    --cyan-glow: rgba(0, 229, 255, 0.3);
+    --green: #39ff14;
+    --green-glow: rgba(57, 255, 20, 0.3);
+    --red: #ff4444;
+    --red-glow: rgba(255, 68, 68, 0.3);
+
+    /* Backgrounds */
+    --bg-primary: #050505;
+    --bg-card: #0a0a0a;
+    --bg-card-hover: #111;
+    --bg-overlay: rgba(0, 0, 0, 0.85);
+
+    /* Borders */
+    --border-color: rgba(255, 149, 0, 0.25);
+    --border-hover: rgba(255, 149, 0, 0.6);
+
+    /* Spacing */
+    --section-padding: clamp(60px, 10vh, 120px) clamp(16px, 5vw, 80px);
+    --card-padding: clamp(16px, 3vw, 32px);
+
+    /* Typography */
+    --font-pixel: 'VT323', monospace;
+    --font-mono: 'Share Tech Mono', monospace;
+    --font-retro: 'Press Start 2P', monospace;
+}
+
+/* ====================================
+   Shared Section Styles
+   ==================================== */
+
+.section {
+    position: relative;
+    padding: var(--section-padding);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    font-family: var(--font-pixel);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: var(--amber);
+    text-align: center;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px var(--amber-glow);
+    letter-spacing: 0.1em;
+}
+
+.section-header::before {
+    content: '> ';
+    color: var(--green);
+    opacity: 0.7;
+}
+
+.section-subheader {
+    font-family: var(--font-mono);
+    font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+    color: var(--amber-dim);
+    letter-spacing: 0.3em;
+    text-align: center;
+    margin-bottom: 48px;
+    opacity: 0.6;
+}
+
+/* ====================================
+   CRT Effects (Global Overlays)
+   ==================================== */
+
+.crt-scanlines {
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.03) 0px,
+            rgba(0, 0, 0, 0.03) 1px,
+            transparent 1px,
+            transparent 3px);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.crt-vignette {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at center,
+            transparent 0%,
+            transparent 60%,
+            rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/* ====================================
+   Retro Card Component
+   ==================================== */
+
+.retro-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: var(--card-padding);
+    position: relative;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.retro-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 20px rgba(255, 149, 0, 0.1), inset 0 0 20px rgba(255, 149, 0, 0.03);
+}
+
+.retro-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 8px;
+    right: 8px;
+    height: 2px;
+    background: var(--amber);
+    opacity: 0.4;
+}
+
+/* ====================================
+   Retro Button
+   ==================================== */
+
+.retro-btn {
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    color: var(--amber);
+    background: transparent;
+    border: 2px solid var(--amber);
+    padding: 10px 24px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    text-shadow: 0 0 5px var(--amber-glow);
+}
+
+.retro-btn:hover {
+    background: var(--amber);
+    color: #000;
+    box-shadow: 0 0 20px var(--amber-glow), 0 0 40px rgba(255, 149, 0, 0.15);
+    text-shadow: none;
+}
+
+.retro-btn--cyan {
+    color: var(--cyan);
+    border-color: var(--cyan);
+    text-shadow: 0 0 5px var(--cyan-glow);
+}
+
+.retro-btn--cyan:hover {
+    background: var(--cyan);
+    color: #000;
+    box-shadow: 0 0 20px var(--cyan-glow);
+}
+
+.retro-btn--small {
+    font-size: 1rem;
+    padding: 6px 16px;
+}
+
+/* ====================================
+   Scroll Reveal Animation
+   ==================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ====================================
+   Pixel Divider
+   ==================================== */
+
+.pixel-divider {
+    width: 100%;
+    max-width: 600px;
+    height: 4px;
+    margin: 0 auto;
+    background: repeating-linear-gradient(90deg,
+            var(--amber) 0px,
+            var(--amber) 8px,
+            transparent 8px,
+            transparent 16px);
+    opacity: 0.3;
+}
+
+/* ====================================
+   Shared Animations
+   ==================================== */
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 15px var(--amber-glow);
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, -2px);
+    }
+
+    60% {
+        transform: translate(-1px, -1px);
+    }
+
+    80% {
+        transform: translate(1px, 1px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes scanline-sweep {
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+/* ====================================
+   Responsive
+   ==================================== */
+
+@media (max-width: 768px) {
+    .section {
+        padding: clamp(40px, 8vh, 80px) 16px;
+    }
+
+    .section-header {
+        font-size: clamp(1.4rem, 6vw, 2rem);
+    }
+
+    .section-subheader {
+        margin-bottom: 32px;
+        font-size: 0.7rem;
+    }
+}

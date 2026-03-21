@@ -1,0 +1,103 @@
+/* ====================================
+   Schedule Section
+   ==================================== */
+
+.schedule {
+    background: var(--bg-primary);
+}
+
+.schedule__tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Timeline */
+.schedule__timeline {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+}
+
+.schedule__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0;
+    animation: card-appear 0.35s ease-out both;
+}
+
+.schedule__time {
+    font-family: var(--font-pixel);
+    font-size: 1.3rem;
+    color: var(--amber);
+    min-width: 65px;
+    text-align: right;
+    text-shadow: 0 0 8px var(--amber-glow);
+}
+
+.schedule__dot {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--amber);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule__dot span {
+    width: 6px;
+    height: 6px;
+    background: var(--amber);
+}
+
+/* Vertical connector line */
+.schedule__item:not(:last-child) .schedule__dot::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 28px;
+    background: var(--border-color);
+}
+
+.schedule__event {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.schedule__event-name {
+    font-family: var(--font-pixel);
+    font-size: 1.1rem;
+    color: var(--amber-bright);
+    letter-spacing: 0.05em;
+}
+
+.schedule__event-type {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .schedule__time {
+        font-size: 1rem;
+        min-width: 50px;
+    }
+
+    .schedule__event-name {
+        font-size: 0.95rem;
+    }
+}

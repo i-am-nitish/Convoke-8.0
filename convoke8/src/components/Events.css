@@ -1,0 +1,124 @@
+/* ====================================
+   Events Section
+   ==================================== */
+
+.events {
+    background: #030303;
+}
+
+.events__tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.events__tab {
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    color: var(--amber-dim);
+    background: none;
+    border: 1px solid var(--border-color);
+    padding: 8px 20px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+}
+
+.events__tab:hover {
+    color: var(--amber);
+    border-color: var(--amber);
+}
+
+.events__tab--active {
+    color: #000;
+    background: var(--amber);
+    border-color: var(--amber);
+    text-shadow: none;
+}
+
+/* Grid */
+.events__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Card */
+.events__card {
+    display: flex;
+    flex-direction: column;
+    animation: card-appear 0.4s ease-out both;
+}
+
+@keyframes card-appear {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.events__card-tag {
+    font-family: var(--font-retro);
+    font-size: 0.55rem;
+    color: var(--cyan);
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    padding: 4px 10px;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 12px;
+    letter-spacing: 0.15em;
+}
+
+.events__card-name {
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    color: var(--amber);
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px var(--amber-glow);
+    line-height: 1.3;
+}
+
+.events__card-desc {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: rgba(255, 149, 0, 0.6);
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+.events__card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.events__card-team {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--green);
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+    .events__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events__tab {
+        font-size: 1rem;
+        padding: 6px 14px;
+    }
+}
