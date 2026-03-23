@@ -109,3 +109,41 @@ export function playSectionBuzz() {
     // Silently fail
   }
 }
+
+// Selection/confirmation beep — higher pitched melodic tone
+export function playSelectSound() {
+  try {
+    const ctx = getCtx();
+    const now = ctx.currentTime;
+
+    // First note - higher pitch
+    const osc1 = ctx.createOscillator();
+    osc1.type = 'square';
+    osc1.frequency.value = 523; // C5
+    
+    const gain1 = ctx.createGain();
+    gain1.gain.setValueAtTime(0.04, now);
+    gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+    
+    osc1.connect(gain1);
+    gain1.connect(ctx.destination);
+    osc1.start(now);
+    osc1.stop(now + 0.1);
+
+    // Second note - even higher pitch, starts slightly after first
+    const osc2 = ctx.createOscillator();
+    osc2.type = 'square';
+    osc2.frequency.value = 659; // E5
+    
+    const gain2 = ctx.createGain();
+    gain2.gain.setValueAtTime(0.04, now + 0.08);
+    gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+    
+    osc2.connect(gain2);
+    gain2.connect(ctx.destination);
+    osc2.start(now + 0.08);
+    osc2.stop(now + 0.18);
+  } catch (e) {
+    // Silently fail — audio is non-critical
+  }
+}

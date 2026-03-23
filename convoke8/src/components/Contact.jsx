@@ -17,8 +17,13 @@ function Contact() {
 
                     <div className="retro-card contact__card">
                         <h3 className="contact__card-title">PHONE</h3>
-                        <a href="tel:+919876543210" className="contact__link">
-                            +91 98765 43210
+                        <a href="tel:+919836962506" className="contact__link">
+                            ABITATHA: +91 98369 62506
+                        </a>
+                        <br/>
+                        <br/>
+                        <a href="tel:+917439640610" className="contact__link">
+                            DEBASMI: +91 7439 640 610
                         </a>
                     </div>
 
@@ -26,7 +31,7 @@ function Contact() {
                         <h3 className="contact__card-title">LOCATION</h3>
                         <p className="contact__text">
                             Cluster Innovation Centre<br />
-                            3rd Floor, University Stadium<br />
+                            University Stadium<br />
                             University of Delhi, North Campus<br />
                             New Delhi — 110007
                         </p>

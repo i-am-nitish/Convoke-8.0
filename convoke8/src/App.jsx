@@ -58,7 +58,7 @@ function App() {
       <Schedule />
       <Hackathon />
       <Sponsors />
-      <Gallery />
+      {/* <Gallery /> */}
       <Team />
       <FAQ />
       <Contact />

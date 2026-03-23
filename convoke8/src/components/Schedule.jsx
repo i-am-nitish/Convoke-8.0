@@ -7,6 +7,8 @@ const SCHEDULE = {
         { time: '09:00', event: 'QUIZ CHALLENGE', type: 'fun' },
         { time: '10:00', event: 'JUST A MIN (JAM)', type: 'fun' },
         { time: '10:00', event: 'IPL AUCTION', type: 'fun' },
+        { time: '10:00', event: 'PHOTOGRAPHY', type: 'fun' },
+        { time: '10:00', event: 'TREASURE HUNT', type: 'fun' },
         { time: '10:00', event: 'LINE FOLLOWER', type: 'robotics' },
         { time: '11:00', event: 'COMPETITIVE PROGRAMMING', type: 'tech' },
         { time: '11:00', event: 'ROBO SOCCER', type: 'robotics' },
@@ -15,20 +17,16 @@ const SCHEDULE = {
     ],
     'DAY 2 — APR 10': [
         { time: '10:00', event: 'KNOWLEDGE QUARRY', type: 'tech' },
-        { time: '10:00', event: 'PHOTOGRAPHY', type: 'fun' },
-        { time: '10:00', event: 'TREASURE HUNT', type: 'fun' },
+        { time: '10:00', event: 'ESCAPE ROOM', type: 'fun' },
         { time: '11:00', event: 'ROBO WAR', type: 'robotics' },
         { time: '11:00', event: 'MICRO MOUSE', type: 'robotics' },
         { time: '11:00', event: 'HashHacks - HACKATHON START', type: 'tech' },
         { time: '15:00', event: 'GAMING', type: 'fun' },
     ],
     'DAY 3 — APR 11': [
-        { time: '09:30', event: 'HACKATHON SUBMISSIONS', type: 'tech' },
-        { time: '11:00', event: 'QUIZ FINALS', type: 'fun' },
-        { time: '12:00', event: 'GAMING — FINALS', type: 'fun' },
-        { time: '13:00', event: 'LUNCH BREAK', type: 'break' },
+        { time: '11:00', event: 'HACKATHON SUBMISSIONS', type: 'tech' },
+        { time: '12:00', event: 'LUNCH BREAK', type: 'break' },
         { time: '14:00', event: 'HACKATHON JUDGING & DEMOS', type: 'tech' },
-        { time: '16:00', event: 'CLOSING CEREMONY & PRIZE DISTRIBUTION', type: 'ceremony' },
     ],
 };
 

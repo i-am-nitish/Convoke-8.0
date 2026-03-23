@@ -5,7 +5,7 @@ import SectionHeader from './SectionHeader';
 const EVENTS = {
     TECH: [
         { name: 'COMPETITIVE PROGRAMMING', desc: 'Battle it out with algorithms and data structures in this intense coding showdown.', team: '1', tag: 'CODE', register: '#' },
-        { name: 'HACKATHON', desc: '24-hour hackathon to build innovative solutions for real-world problems.', team: '2-4', tag: 'BUILD', register: 'https://devnovate.co/event/hashhacks-convoke-90-ducic' },
+        { name: 'HashHacks', desc: '24-hour hackathon to build innovative solutions for real-world problems.', team: '2-4', tag: 'BUILD', register: 'https://devnovate.co/event/hashhacks-convoke-90-ducic' },
         { name: 'DATA SCIENCE — KNOWLEDGEQUARRY', desc: 'Dive deep into data, uncover patterns, and present insights.', team: '1-3', tag: 'DATA', register: 'https://devnovate.co/event/knowledgequarry-data-science-challenge-2' },
         // { name: 'TECHNICAL QUIZ', desc: 'Test your knowledge across technology, science, and innovation.', team: '2-3', tag: 'QUIZ' },
     ],
