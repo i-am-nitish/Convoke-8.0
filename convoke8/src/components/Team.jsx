@@ -3,16 +3,19 @@ import SectionHeader from './SectionHeader';
 import { playSelectSound } from '../utils/audio';
 
 const TEAM_DATA = {
-    'CORE TEAM': [
-        
-        
+    'CORE TEAM': [       
         { 
             name: 'Abitatha Roy', 
             role: 'Human Resources, Outreach & Event Organizer', 
             image: '/team_photos/abitatha_roy.jpeg',
             linkedin: 'https://linkedin.com/in/abitatha'
         },
-        
+        { 
+            name: 'Debasmi Basu', 
+            role: 'Human Resources & Event Organizer',
+            image: '/team_photos/debasmi_basu.jpeg',
+            linkedin: 'https://www.linkedin.com/in/debasmi-basu-513726288'
+        },
         { 
             name: 'Sai Prashant Sao', 
             role: 'Robotics Head', 
@@ -24,14 +27,6 @@ const TEAM_DATA = {
             role: 'Design Head', 
             image: '/team_photos/sajal_samveg.jpeg',
             linkedin: 'https://www.linkedin.com/in/sajalsamveg'
-        },
-        
-        
-        { 
-            name: 'Debasmi Basu', 
-            role: 'Human Resources & Event Organizer',
-            image: '/team_photos/debasmi_basu.jpeg',
-            linkedin: 'https://www.linkedin.com/in/debasmi-basu-513726288'
         },
         { 
             name: 'Vijay Samant', 
@@ -68,9 +63,9 @@ const TEAM_DATA = {
         },
         { 
             name: 'Atharva Tadse', 
-            role: 'Design',
+            role: 'Design Team',
             image: '/team_photos/atharva_t.jpeg',
-            linkedin: 'https://linkedin.com/in/atharva-t'
+            linkedin: 'https://www.linkedin.com/in/atharva-tadse-100ba3289'
         },
         { 
             name: 'Anushka Sharma', 
@@ -148,7 +143,7 @@ const TEAM_DATA = {
             name: 'Sujatro Bhadra', 
             role: 'Event Organizer', 
             image: '/team_photos/sujatro_bhadra.jpeg',
-            linkedin: ''
+            linkedin: 'https://www.linkedin.com/in/sujatrobhadra/'
         },
         { 
             name: 'Svetlana Neogi', 
