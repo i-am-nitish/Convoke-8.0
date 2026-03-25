@@ -9,7 +9,7 @@ const SPONSORS = {
         { name: 'GeeksforGeeks', logo: '/gfg-gg-logo.svg', website: 'https://www.geeksforgeeks.org' },
     ],
     'DOMAIN SPONSOR FOR HashHacks': [
-        { name: 'XYZ', logo: '/xyz_logo.png', website: '' },
+        { name: 'XYZ', logo: '/xyz_logo.png', website: 'https://gen.xyz/' },
     ],
     // 'COMMUNITY PARTNERS': [
     //     { name: 'Community 1', logo: null, website: '' },

@@ -10,20 +10,20 @@ const TEAM_DATA = {
             name: 'Abitatha Roy', 
             role: 'Human Resources, Outreach & Event Organizer', 
             image: '/team_photos/abitatha_roy.jpeg',
-            linkedin: 'https://linkedin.com/in/abitatha-roy'
+            linkedin: 'https://linkedin.com/in/abitatha'
         },
         
         { 
             name: 'Sai Prashant Sao', 
             role: 'Robotics Head', 
             image: '/team_photos/prashant_sao.jpeg',
-            linkedin: 'https://linkedin.com/in/prashant-sao'
+            linkedin: 'https://www.linkedin.com/in/sai-prashant-sao-496122289'
         },
         { 
             name: 'Sajal Samveg', 
             role: 'Design Head', 
             image: '/team_photos/sajal_samveg.jpeg',
-            linkedin: 'https://linkedin.com/in/prashant-sao'
+            linkedin: 'https://www.linkedin.com/in/sajalsamveg'
         },
         
         
@@ -31,7 +31,7 @@ const TEAM_DATA = {
             name: 'Debasmi Basu', 
             role: 'Human Resources & Event Organizer',
             image: '/team_photos/debasmi_basu.jpeg',
-            linkedin: 'https://linkedin.com/in/debasmi-basu'
+            linkedin: 'https://www.linkedin.com/in/debasmi-basu-513726288'
         },
         { 
             name: 'Vijay Samant', 
@@ -76,7 +76,7 @@ const TEAM_DATA = {
             name: 'Anushka Sharma', 
             role: 'Event Organizer', 
             image: '/team_photos/anushka_sharma.jpeg',
-            linkedin: 'https://linkedin.com/in/anushka-sharma'
+            linkedin: 'https://www.linkedin.com/in/anushka-sharma-aba5bb285'
         },
         { 
             name: 'Harsh Lodhi', 
@@ -94,13 +94,13 @@ const TEAM_DATA = {
             name: 'Jaskaran Singh', 
             role: 'Event Organizer',
             image: '/team_photos/jaskaran_singh.jpeg',
-            linkedin: 'https://linkedin.com/in/jaskaran-singh'
+            linkedin: 'https://www.linkedin.com/in/jaskaransingh1808'
         },
         { 
-            name: 'Navtej Bambra', 
+            name: 'Navtez Singh', 
             role: 'Event Organizer',
             image: '/team_photos/navtej_bambra.jpeg',
-            linkedin: 'https://linkedin.com/in/navtej-bambra'
+            linkedin: 'https://linkedin.com/in/navtej'
         },
         { 
             name: 'Paras Yadav', 
@@ -124,7 +124,7 @@ const TEAM_DATA = {
             name: 'Pratham Singh Chauhan', 
             role: 'Event Organizer', 
             image: '/team_photos/pratham_c.jpeg',
-            linkedin: 'https://linkedin.com/in/pratham-c'
+            linkedin: 'https://www.linkedin.com/in/pratham-singh-chauhan-306624288'
         },
         { 
             name: 'Priyanshu Yadav', 
@@ -136,25 +136,25 @@ const TEAM_DATA = {
             name: 'Rajanya Roy', 
             role: 'Design Team', 
             image: '/team_photos/rajanya_roy.jpeg',
-            linkedin: 'https://linkedin.com/in/rajanya-roy'
+            linkedin: 'https://www.linkedin.com/in/rajanya-roy-barman-270577222'
         },
         { 
             name: 'Ravina Rastogi', 
             role: 'Event Organizer', 
             image: '/team_photos/ravina_rastogi.jpeg',
-            linkedin: 'https://linkedin.com/in/ravina-rastogi'
+            linkedin: 'https://www.linkedin.com/in/ravina-rastogi'
         },
         { 
             name: 'Sujatro Bhadra', 
             role: 'Event Organizer', 
             image: '/team_photos/sujatro_bhadra.jpeg',
-            linkedin: 'https://linkedin.com/in/svetlana-neogi'
+            linkedin: ''
         },
         { 
             name: 'Svetlana Neogi', 
             role: 'Event Organizer', 
             image: '/team_photos/svetlana_neogi.jpeg',
-            linkedin: 'https://linkedin.com/in/svetlana-neogi'
+            linkedin: 'https://www.linkedin.com/in/svetlana-neogi-939549204'
         },
         { 
             name: 'Tanishk Tiwari', 

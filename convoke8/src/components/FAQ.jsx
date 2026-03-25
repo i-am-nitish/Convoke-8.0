@@ -16,16 +16,8 @@ const FAQS = [
         a: 'Team sizes vary per event — from individual participation to teams of 5. Each event listing specifies the allowed team size on the Events section.',
     },
     {
-        q: 'IS ACCOMMODATION PROVIDED?',
-        a: 'Accommodation is available for outstation participants on a first-come, first-served basis. Contact us at convoke@cic.du.ac.in for details.',
-    },
-    {
         q: 'WHERE IS THE VENUE?',
         a: 'CONVOKE 8.0 is held at Cluster Innovation Centre (CIC), University of Delhi, 3rd Floor, University Stadium, North Campus.',
-    },
-    {
-        q: 'HOW DO I REGISTER FOR EVENTS?',
-        a: 'All registrations are handled through Unstop. Click the "Register" button on any event to be redirected to the registration page.',
     },
     {
         q: 'WHEN DOES CONVOKE 8.0 START?',
