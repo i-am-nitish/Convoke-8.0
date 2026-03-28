@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convoke Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:wght@400;600;700&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="lava-floor" aria-hidden="true"></div>
+  <div class="fog" aria-hidden="true"></div>
+
+  <div class="spores" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="light-string" aria-hidden="true">
+    <span class="bulb on"></span>
+    <span class="bulb dim b3"></span>
+    <span class="bulb on b4"></span>
+    <span class="bulb dim b5"></span>
+    <span class="bulb on b6"></span>
+    <span class="bulb on"></span>
+    <span class="bulb dim b3"></span>
+    <span class="bulb on b4"></span>
+    <span class="bulb dim"></span>
+    <span class="bulb on b5"></span>
+    <span class="bulb on b6"></span>
+    <span class="bulb dim b3"></span>
+  </div>
+
+  <main class="page-shell">
+    <section class="chat-card" aria-label="Escape room chatbot">
+      <header class="chat-header">
+        <div class="avatar" aria-hidden="true">C</div>
+        <div>
+          <p class="eyebrow">Convoke 8.0 signal channel</p>
+          <h1 data-text="Rift Chat">Rift Chat</h1>
+        </div>
+      </header>
+
+      <div class="chat-intro">
+        <p>The walls are listening. Only the right location opens the next path.</p>
+      </div>
+
+      <div class="chat-window" id="chatWindow" aria-live="polite" aria-label="Chat messages"></div>
+
+      <form class="chat-form" id="chatForm">
+        <label class="sr-only" for="chatInput">Type your message</label>
+        <input
+          id="chatInput"
+          name="message"
+          type="text"
+          placeholder="Type Hi or hello to start"
+          autocomplete="off"
+          required
+        >
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
