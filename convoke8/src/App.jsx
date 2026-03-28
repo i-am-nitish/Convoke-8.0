@@ -1,4 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './styles/theme.css';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -12,11 +13,11 @@ import Gallery from './components/Gallery';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
+import EscapeRoomChat from './components/EscapeRoomChat';
 
-function App() {
+function LandingPage() {
   const observerRef = useRef(null);
 
-  // Intersection Observer for scroll-reveal animations
   const setupObserver = useCallback(() => {
     if (observerRef.current) return;
     observerRef.current = new IntersectionObserver(
@@ -37,7 +38,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    // Delay to ensure DOM is ready
     const timer = setTimeout(setupObserver, 100);
     return () => {
       clearTimeout(timer);
@@ -63,6 +63,15 @@ function App() {
       <FAQ />
       <Contact />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/chat" element={<EscapeRoomChat />} />
+    </Routes>
   );
 }
 
