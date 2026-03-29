@@ -28,12 +28,12 @@ const TEAM_DATA = {
             image: '/team_photos/prashant_sao.jpeg',
             linkedin: 'https://www.linkedin.com/in/sai-prashant-sao-496122289'
         },
-        {
-            name: 'Sajal Samveg',
-            role: 'Design Head',
-            image: '/team_photos/sajal_samveg.jpeg',
-            linkedin: 'https://www.linkedin.com/in/sajalsamveg'
-        },
+        // {
+        //     name: 'Sajal Samveg',
+        //     role: 'Design Head',
+        //     image: '/team_photos/sajal_samveg.jpeg',
+        //     linkedin: 'https://www.linkedin.com/in/sajalsamveg'
+        // },
         {
             name: 'Vijay Samant',
             role: 'Tech Head',

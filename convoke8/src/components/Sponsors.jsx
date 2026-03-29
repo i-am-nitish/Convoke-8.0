@@ -8,6 +8,7 @@ const SPONSORS = [
     { name: 'Devfolio', caption: 'Tech Partner', logo: '/devfolio_logo.png', website: 'https://devfolio.co' },
     { name: 'Devnovate', caption: 'Domain Sponsor for HashHacks', logo: '/devnovate_logo.png', website: 'http://devnovate.co/' },
     { name: 'DU Beat', caption: 'Media Partner', logo: '/dubeat_logo.png', website: 'https://dubeat.com/' },
+    { name: 'Geek Room', caption: 'Community Partner', logo: '/mediapartner1_logo.webp', website: 'https://www.geekroom.in/' },
 ];
 
 function Sponsors() {
