@@ -1,6 +1,5 @@
 const FINAL_DESTINATION_LINK = "https://svetlana2006.github.io/Escape_room_final_R2/";
-const VALID_LOCATION = "\u0938\u0902\u0915\u0941\u0932 \u0928\u0935\u093e\u091a\u093e\u0930 \u0915\u0947\u0902\u0926\u094d\u0930";
-
+const VALID_LOCATION = "\\u0938\\u0902\\u0915\\u0941\\u0932 \\u0928\\u0935\\u092a\\u094d\\u0930\\u0935\\u0930\\u094d\\u0924\\u0928 \\u0915\\u0947\\u0902\\u0926\\u094d\\u0930";
 const chatWindow = document.getElementById("chatWindow");
 const chatForm = document.getElementById("chatForm");
 const chatInput = document.getElementById("chatInput");
