@@ -1,0 +1,12 @@
+{
+  "name": "escape_room_r2_convoke_bot",
+  "version": "1.0.0",
+  "description": "Escape Room Project",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npx --yes live-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

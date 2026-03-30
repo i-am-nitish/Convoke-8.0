@@ -2,7 +2,19 @@ import { useState, useRef, useEffect } from 'react';
 import './EscapeRoomChat.css';
 
 const FINAL_DESTINATION_LINK = "https://svetlana2006.github.io/Escape_room_final_R2/";
-const VALID_LOCATION = "\u0938\u0902\u0915\u0941\u0932 \u0928\u0935\u093e\u091a\u093e\u0930 \u0915\u0947\u0902\u0926\u094d\u0930";
+const VALID_LOCATIONS = [
+    "\u0938\u0902\u0915\u0941\u0932 \u0928\u0935\u092a\u094d\u0930\u0935\u0930\u094d\u0924\u0928 \u0915\u0947\u0902\u0926\u094d\u0930", // Sankul Navpravartan Kendra
+    "\u0938\u0902\u0915\u0941\u0932 \u0928\u0935\u093e\u092a\u094d\u0930\u0935\u0930\u094d\u0924\u0928 \u0915\u0947\u0902\u0926\u094d\u0930", // Sankul Navapravartan Kendra
+    "संकुल नवप्रवर्तन केंद्र",
+    "संकुल नवाप्रवर्तन केंद्र",
+    "संकुल नवप्रवर्तन केन्द्र",
+    "संकुल नवाप्रवर्तन केन्द्र"
+];
+
+function isCorrectLocation(msg) {
+    const cleanUser = msg.trim().replace(/\s+/g, " ");
+    return VALID_LOCATIONS.some(loc => loc === cleanUser);
+}
 
 function escapeHtml(value) {
     return value
@@ -54,7 +66,7 @@ function EscapeRoomChat() {
         }
 
         if (botState === 'waitingForLocation') {
-            if (userMessage.trim() === VALID_LOCATION) {
+            if (isCorrectLocation(userMessage)) {
                 setTimeout(() => {
                     addMessage('bot', `Yeh raha aapka link: <a href="${FINAL_DESTINATION_LINK}" target="_blank" rel="noopener noreferrer">${FINAL_DESTINATION_LINK}</a>`);
                     setBotState('completed');
@@ -65,7 +77,7 @@ function EscapeRoomChat() {
             return;
         }
 
-        if (userMessage.trim() === VALID_LOCATION) {
+        if (isCorrectLocation(userMessage)) {
             setTimeout(() => {
                 addMessage('bot', `Yeh raha aapka link: <a href="${FINAL_DESTINATION_LINK}" target="_blank" rel="noopener noreferrer">${FINAL_DESTINATION_LINK}</a>`);
             }, 300);
