@@ -5,6 +5,7 @@ import { playSelectSound } from '../utils/audio';
 const SPONSORS = [
     { name: 'GeeksforGeeks', caption: 'Title Sponsor for Competitive Programming & Platform Sponsor for Knowledge Quarry', logo: '/gfg-gg-logo.svg', website: 'https://www.geeksforgeeks.org' },
     { name: 'XYZ', caption: 'Domain Sponsor for HashHacks', logo: '/xyz_logo.png', website: 'https://gen.xyz/' },
+    { name: 'WHYPCB', caption: 'Silver Sponsor for Robotics', logo: '/robo_soccer_sponsor.jpeg', website: '/' },
     { name: 'Devfolio', caption: 'Tech Partner', logo: '/devfolio_logo.png', website: 'https://devfolio.co' },
     { name: 'Devnovate', caption: 'Domain Sponsor for HashHacks', logo: '/devnovate_logo.png', website: 'http://devnovate.co/' },
     { name: 'DU Beat', caption: 'Media Partner', logo: '/dubeat_logo.png', website: 'https://dubeat.com/' },

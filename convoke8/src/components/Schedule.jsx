@@ -11,8 +11,8 @@ const SCHEDULE = {
         { time: '10:00', event: 'TREASURE HUNT', type: 'fun' },
         { time: '10:00', event: 'LINE FOLLOWER', type: 'robotics' },
         { time: '11:00', event: 'COMPETITIVE PROGRAMMING', type: 'tech' },
-        { time: '11:00', event: 'ROBO SOCCER', type: 'robotics' },
         { time: '13:00', event: 'CODE THE COUTURE', type: 'fun' },
+        { time: '14:00', event: 'ROBO SOCCER', type: 'robotics' },
         { time: '18:00', event: 'END OF DAY 1', type: 'EOD1' },
     ],
     'DAY 2 — APR 10': [

@@ -7,10 +7,10 @@ const FAQS = [
         q: 'WHO CAN PARTICIPATE?',
         a: 'CONVOKE 8.0 is open to all college students across India. Some events may have specific eligibility criteria mentioned in their descriptions.',
     },
-    {
-        q: 'WHAT ARE THE REGISTRATION FEES?',
-        a: 'Registration fees vary by event. Most individual events range from ₹100-₹300 per team. Hackathon registration is ₹200 per team. Check individual event pages for exact pricing.',
-    },
+    // {
+    //     q: 'WHAT ARE THE REGISTRATION FEES?',
+    //     a: 'Registration fees vary by event. Most individual events range from ₹100-₹300 per team. Hackathon registration is ₹200 per team. Check individual event pages for exact pricing.',
+    // },
     {
         q: 'WHAT IS THE TEAM SIZE FOR EVENTS?',
         a: 'Team sizes vary per event — from individual participation to teams of 5. Each event listing specifies the allowed team size on the Events section.',
