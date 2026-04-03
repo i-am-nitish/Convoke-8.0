@@ -17,6 +17,12 @@ const TEAM_DATA = {
             linkedin: 'https://www.linkedin.com/in/debasmi-basu-513726288'
         },
         {
+            name: 'Devanshu Singhai',
+            role: 'Lead Web Developer',
+            image: '/team_photos/devanshu_image.jpg',
+            linkedin: 'https://www.linkedin.com/in/devanshu-singhai-6aa10b291/'
+        },
+        {
             name: 'Prateeksha',
             role: 'Design Head',
             image: '/team_photos/prateeksha_y.jpeg',
