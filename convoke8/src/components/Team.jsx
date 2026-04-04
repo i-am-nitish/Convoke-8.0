@@ -110,6 +110,12 @@ const TEAM_DATA = {
             linkedin: 'https://linkedin.com/in/navtej'
         },
         {
+            name: 'Nitish Kumar',
+            role: 'Tech Lead',
+            image: '/team_photos/nitish_sky.jpeg',
+            linkedin: 'https://www.linkedin.com/in/iamnitishky/'
+        },
+        {
             name: 'Paras Yadav',
             role: 'Event Organizer',
             image: '/team_photos/paras_yadav.jpeg',
