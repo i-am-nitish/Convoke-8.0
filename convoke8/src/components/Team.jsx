@@ -67,12 +67,12 @@ const TEAM_DATA = {
             image: '/team_photos/ahrnish_dahal.jpeg',
             linkedin: 'https://linkedin.com/in/ahrnish-dahal'
         },
-        {
-            name: 'Amitesh Mahapatra',
-            role: 'Event Organizer',
-            image: '/team_photos/amitesh_m.jpeg',
-            linkedin: 'https://linkedin.com/in/amitesh-m'
-        },
+        // {
+        //     name: 'Amitesh Mahapatra',
+        //     role: 'Event Organizer',
+        //     image: '/team_photos/amitesh_m.jpeg',
+        //     linkedin: 'https://linkedin.com/in/amitesh-m'
+        // },
         {
             name: 'Atharva Tadse',
             role: 'Design Team',
