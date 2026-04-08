@@ -11,10 +11,10 @@ const TEAM_DATA = {
             linkedin: 'https://linkedin.com/in/abitatha'
         },
         {
-            name: 'Aditya Aggarwal ',
-            role: 'Food and Beverages head',
-            image: '/team_photos/devanshu_image.jpg',
-            linkedin: 'https://linkedin.com/in/aditya-agarwal-cic'
+            name: 'Aditya Agrawal',
+            role: 'Food Incharge',
+            image: '/team_photos/aditya_agrawal.jpeg',
+            linkedin: 'https://www.linkedin.com/in/aditya-agrawal-126616291'
         },
         {
             name: 'Debasmi Basu',
