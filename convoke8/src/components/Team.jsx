@@ -29,6 +29,12 @@ const TEAM_DATA = {
             linkedin: 'https://www.linkedin.com/in/devanshu-singhai-6aa10b291/'
         },
         {
+            name: 'Prakhar Raghuwanshi',
+            role: 'Inventory head',
+            image: '/team_photos/prakhar_r.jpeg',
+            linkedin: 'https://linkedin.com/in/prakhar-r'
+        },
+        {
             name: 'Prateeksha',
             role: 'Design Head',
             image: '/team_photos/prateeksha_y.jpeg',
@@ -127,12 +133,7 @@ const TEAM_DATA = {
             image: '/team_photos/paras_yadav.jpeg',
             linkedin: 'https://linkedin.com/in/paras-yadav'
         },
-        {
-            name: 'Prakhar Raghuwanshi',
-            role: 'Event Organizer',
-            image: '/team_photos/prakhar_r.jpeg',
-            linkedin: 'https://linkedin.com/in/prakhar-r'
-        },
+        
         {
             name: 'Pratham Singh Chauhan',
             role: 'Event Organizer',
